@@ -1,0 +1,12 @@
+import marcas.*
+import jarras.*
+
+test "testX" {
+	
+	const hofbrau = new Rubia(lupulo=1, pais="alemana", graduacion=0.08)
+	const jarra1 = new Jarra(capacidad=0.5, marca= hofbrau)
+	
+	assert.equals(0.04, jarra1.contenidoAlcohol())
+
+}
+
